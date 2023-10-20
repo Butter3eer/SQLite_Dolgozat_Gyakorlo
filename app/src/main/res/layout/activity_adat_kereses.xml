@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdatKeresesActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFozoKereses"
+        android:textSize="20sp"
+        android:hint="Pálinka Főzője"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextGyumolcsKereses"
+        android:textSize="20sp"
+        android:hint="Pálinka Gyümölcse"
+        android:layout_below="@+id/editTextFozoKereses"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonKereses"
+        android:text="Keresés"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextGyumolcsKereses"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonVissza"
+        android:text="Vissza"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonKereses"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAlkoholTartalom"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonVissza"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFelvetel"
+        android:text="Pálinka felvétele"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonKereses"
+        android:text="Pálinka keresése"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonFelvetel"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonListazas"
+        android:text="Pálinka listázása"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonKereses"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewLista"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonListazas"
+        />
+
+</RelativeLayout>

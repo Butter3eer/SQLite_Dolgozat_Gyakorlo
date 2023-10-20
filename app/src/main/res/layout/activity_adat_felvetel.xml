@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdatFelvetelActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFozoRogzit"
+        android:textSize="20sp"
+        android:hint="Főző"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextGyumolcsRogzit"
+        android:textSize="20sp"
+        android:hint="Gyümölcs"
+        android:layout_below="@+id/editTextFozoRogzit"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAlkoholRogzit"
+        android:textSize="20sp"
+        android:hint="Alkoholtartalom %"
+        android:layout_below="@+id/editTextGyumolcsRogzit"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rögzít"
+        android:id="@+id/buttonRogzit"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextAlkoholRogzit"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vissza"
+        android:id="@+id/buttonVissza"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonRogzit"
+        />
+
+</RelativeLayout>
